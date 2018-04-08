@@ -1,1 +1,1 @@
-# phaserjs-playformer
+# phaserjs-platformer
