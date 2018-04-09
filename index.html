@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <title>phaserjs-platformer</title>
         <script src="//cdn.jsdelivr.net/npm/phaser@3.1.1/dist/phaser.js"></script>
+        <style>
+            body {background-color: #00001a;}
+        </style>
     </head>
     <body>
         <script type="text/javascript">
@@ -21,11 +24,11 @@
             var game = new Phaser.Game(config);
 
             function preload(){
-
+                this.load.image('bg_sky', 'assets/images/bg_sky.png');
             }
 
             function create() {
-
+                this.add.image(400, 300, 'bg_sky');
             }
 
             function update(){
